@@ -1,0 +1,13 @@
+2026-09-26 18:00:01 INFO Application started successfully
+2026-09-26 18:01:12 INFO User authentication service initialized
+2026-09-26 18:02:34 INFO Payment service connected to database
+2026-09-26 18:05:17 INFO Processing payment request order_id=1042
+2026-09-26 18:05:18 ERROR Payment service failed order_id=1042 error="Connection timeout"
+2026-09-26 18:05:19 ERROR Database connection failed host=payment-db error="Connection refused"
+2026-09-26 18:05:21 ERROR Payment request failed order_id=1043 error="Database unavailable"
+2026-09-26 18:05:25 WARN Payment service retry attempt=1
+2026-09-26 18:05:30 WARN Payment service retry attempt=2
+2026-09-26 18:05:36 ERROR Payment service unavailable error="Maximum retries exceeded"
+2026-09-26 18:06:01 INFO Health check completed service=auth status=healthy
+2026-09-26 18:06:02 ERROR Health check failed service=payment status=unhealthy
+2026-09-26 18:07:14 INFO Application continuing with degraded functionality
